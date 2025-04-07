@@ -7,13 +7,13 @@ module.exports = {
     category: 'security',
     premium: false,
     run: async (client, message, args) => {
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 1) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Your Server Doesn't Meet My 40 Member Criteria`
+                            `<a:Cross:1346485804368789525> | Your Server Doesn't Meet My 40 Member Criteria`
                         )
                 ]
             })
@@ -29,7 +29,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Only the server owner or an extra owner with a higher role than mine is authorized to execute this command.`
+                            `<a:Cross:1346485804368789525> | Only the server owner or an extra owner with a higher role than mine is authorized to execute this command.`
                         )
                 ]
             })
@@ -44,7 +44,7 @@ module.exports = {
             const higherole = new MessageEmbed()
                 .setColor(client.color)
                 .setDescription(
-                    `<:cross:1317733546261217300> | Only the server owner or extra owner with a higher role than mine can execute this command.
+                    `<a:Cross:1346485804368789525> | Only the server owner or extra owner with a higher role than mine can execute this command.
 
 
 
@@ -111,7 +111,7 @@ To enable use antinuke enable ** `)
                                 new MessageEmbed()
                                     .setColor(client.color)
                                     .setDescription(
-                                        `<:cross:1317733546261217300> | <@${user.id}> is not a whitelisted member.`
+                                        `<a:Cross:1346485804368789525> | <@${user.id}> is not a whitelisted member.`
                                     )
                             ]
                         })
@@ -128,7 +128,7 @@ To enable use antinuke enable ** `)
                                         new MessageEmbed()
                                             .setColor(client.color)
                                             .setDescription(
-                                                `<:cross:1317733546261217300> | <@${user.id}> is not a whitelisted member.`
+                                                `<a:Cross:1346485804368789525> | <@${user.id}> is not a whitelisted member.`
                                             )
                                     ]
                                 })
@@ -146,7 +146,7 @@ To enable use antinuke enable ** `)
                                         new MessageEmbed()
                                             .setColor(client.color)
                                             .setDescription(
-                                                `<:tick:1317818894546898985> | Successfully removed <@${user.id}> from whitelisted user.`
+                                                `<a:tick:1272061375539318795> | Successfully removed <@${user.id}> from whitelisted user.`
                                             )
                                     ]
                                 })

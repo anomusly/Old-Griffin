@@ -32,14 +32,14 @@ module.exports = {
             })
             const emb = new MessageEmbed()
                 .setDescription(
-                    `<:tick:1317818894546898985> | ${channel} is now visible to @everyone role`
+                    `<a:tick:1272061375539318795> | ${channel} is now visible to @everyone role`
                 )
                 .setColor(client.color)
             return message.channel.send({ embeds: [emb] })
         } else {
             const embi = new MessageEmbed()
                 .setDescription(
-                    `<:cross:1317733546261217300> | I don't have adequate permissions to unhide this channel.`
+                    `<a:Cross:1346485804368789525> | I don't have adequate permissions to unhide this channel.`
                 )
                 .setColor(client.color)
             return message.channel.send({ embeds: [embi] })

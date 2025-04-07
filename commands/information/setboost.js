@@ -12,7 +12,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have \`Administration\` perms to run this command.`
+                            `<a:Cross:1346485804368789525> | You must have \`Administration\` perms to run this command.`
                         )
                 ]
             })
@@ -30,7 +30,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You didn't provided a valid channel.`
+                            `<a:Cross:1346485804368789525> | You didn't provided a valid channel.`
                         )
                 ]
             })
@@ -45,7 +45,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | I didn't have permissions to send messages in <#${channel.id}>.`
+                            `<a:Cross:1346485804368789525> | I didn't have permissions to send messages in <#${channel.id}>.`
                         )
                 ]
             })
@@ -64,8 +64,8 @@ module.exports = {
                     .setColor(client.color)
                     .setDescription(
                         disable
-                            ? `<:tick:1317818894546898985> | I'll not send messages when when someone boosts the server.`
-                            : `<:tick:1317818894546898985> | I'll now send messages to <#${channel.id}> when someone boosts the server.`
+                            ? `<a:tick:1272061375539318795> | I'll not send messages when when someone boosts the server.`
+                            : `<a:tick:1272061375539318795> | I'll now send messages to <#${channel.id}> when someone boosts the server.`
                     )
             ]
         })

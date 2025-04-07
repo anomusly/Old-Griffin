@@ -12,7 +12,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have \`Timeout Members\` permissions to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have \`Timeout Members\` permissions to use this command.`
                         )
                 ]
             })
@@ -23,7 +23,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | I must have \`Timeout Members\` permissions to run this command.`
+                            `<a:Cross:1346485804368789525> | I must have \`Timeout Members\` permissions to run this command.`
                         )
                 ]
             })
@@ -37,7 +37,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You didn't mentioned the member whom you want to mute.`
+                            `<a:Cross:1346485804368789525> | You didn't mentioned the member whom you want to mute.`
                         )
                 ]
             })
@@ -54,27 +54,27 @@ async function untimeout(issuer, target, reason) {
     const response = await unTimeoutTarget(issuer, target, reason)
     if (typeof response === 'boolean')
         return getEmbed(
-            `<:tick:1317818894546898985> | Successfully unmuted <@${target.user.id}>!`,
+            `<a:tick:1272061375539318795> | Successfully unmuted <@${target.user.id}>!`,
             client
         )
     if (response === 'BOT_PERM')
         return getEmbed(
-            `<:cross:1317733546261217300> | I don't have enough permissions to unmute <@${target.user.id}>.`,
+            `<a:Cross:1346485804368789525> | I don't have enough permissions to unmute <@${target.user.id}>.`,
             client
         )
     else if (response === 'MEMBER_PERM')
         return getEmbed(
-            `<:cross:1317733546261217300> | You don't have enough permissions to unmute <@${target.user.id}>.`,
+            `<a:Cross:1346485804368789525> | You don't have enough permissions to unmute <@${target.user.id}>.`,
             client
         )
     else if (response === 'NO_TIMEOUT')
         return getEmbed(
-            `<:cross:1317733546261217300> | <@${target.user.id}> is not muted only!`,
+            `<a:Cross:1346485804368789525> | <@${target.user.id}> is not muted only!`,
             client
         )
     else
         return getEmbed(
-            `<:cross:1317733546261217300> | I don't have enough perms to unmute <@${target.user.id}>.`,
+            `<a:Cross:1346485804368789525> | I don't have enough perms to unmute <@${target.user.id}>.`,
             client
         )
 }

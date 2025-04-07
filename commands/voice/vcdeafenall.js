@@ -42,7 +42,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have a higher role than me to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have a higher role than me to use this command.`
                         )
                 ]
             })

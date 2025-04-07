@@ -85,7 +85,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:tick:1317818894546898985> | **<@${user.id}> (${user.id})** has been added as a **Blacklist** user.`
+                            `<a:tick:1272061375539318795> | **<@${user.id}> (${user.id})** has been added as a **Blacklist** user.`
                         )
                 ]
             })
@@ -100,7 +100,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:tick:1317818894546898985> | **<@${user.id}> (${user.id})** has been removed from a **Blacklist** user.`
+                            `<a:tick:1272061375539318795> | **<@${user.id}> (${user.id})** has been removed from a **Blacklist** user.`
                         )
                 ]
             })

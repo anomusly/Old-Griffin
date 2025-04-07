@@ -7,7 +7,7 @@ module.exports = {
     category: 'welcomer',
     premium: false,
     run: async (client, message, args) => {
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 1) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()

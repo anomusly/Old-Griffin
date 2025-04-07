@@ -25,9 +25,9 @@ module.exports = class ReXx extends Client {
         this.commands = new Collection()
         this.categories = fs.readdirSync('./commands/')
         this.emoji = {
-            tick: '<:tick:1317818894546898985>',
-            cross: '<:cross:1317733546261217300>',
-            dot: '<:reddot:1317860462028914700>',
+            tick: '<a:tick:1272061375539318795>',
+            cross: '<a:Cross:1346485804368789525>',
+            dot: '<:GriffinDot:1358732446237200404>',
             drax: '<:stolen_emoji:1290697912745066527>',
             dev: '<:stolen_emoji:1290698015090409473>',
             qt: '<:stolen_emoji:1290698153892249682>',

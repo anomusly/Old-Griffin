@@ -7,13 +7,13 @@ module.exports = {
     category: 'security',
     premium: false,
     run: async (client, message, args) => {
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 1) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | **Your Server Doesn't Meet My 40 Member Criteria**`
+                            `<a:Cross:1346485804368789525> | **Your Server Doesn't Meet My 40 Member Criteria**`
                         )
                 ]
             })
@@ -30,7 +30,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | **Only the server owner or an extra owner with a higher role than mine is authorized to execute this command.**`
+                            `<a:Cross:1346485804368789525> | **Only the server owner or an extra owner with a higher role than mine is authorized to execute this command.**`
                         )
                 ]
             })
@@ -45,7 +45,7 @@ module.exports = {
             const higherole = new MessageEmbed()
                 .setColor(client.color)
                 .setDescription(
-                    `<:cross:1317733546261217300> | **Only the server owner or extra owner with a higher role than mine can execute this command.**
+                    `<a:Cross:1346485804368789525> | **Only the server owner or extra owner with a higher role than mine can execute this command.**
 
 
 
@@ -124,19 +124,19 @@ async function addMainrole({ guild, client }, role) {
     const settings = await getSettings(guild)
     if (role) {
         if (!guild.me.permissions.has('MANAGE_ROLES'))
-            return `<:cross:1317733546261217300> | **I don't have the \`MANAGE_ROLES\` permission**`
+            return `<a:Cross:1346485804368789525> | **I don't have the \`MANAGE_ROLES\` permission**`
         if (role.managed)
-            return `<:cross:1317733546261217300> | **This role is managed by an integration.**`
+            return `<a:Cross:1346485804368789525> | **This role is managed by an integration.**`
     }
     if (!role) {
         settings.mainrole = []
         await settings.save()
-        return `<:tick:1317818894546898985> | **Mainrole module was successfully disabled.**`
+        return `<a:tick:1272061375539318795> | **Mainrole module was successfully disabled.**`
     }
     if (settings.mainrole.includes(role.id))
-        return `<:cross:1317733546261217300> | **This role is already present in the mainrole config.**`
+        return `<a:Cross:1346485804368789525> | **This role is already present in the mainrole config.**`
     if (settings.mainrole.length == 5)
-        return `<:cross:1317733546261217300> | **Maximum 5 roles can be set for Mainroles.**`
+        return `<a:Cross:1346485804368789525> | **Maximum 5 roles can be set for Mainroles.**`
     else settings.mainrole.push(role.id)
     await settings.save()
     return `<a:tk:1290911171389423717> | **Successfully **added** <@&${role.id}> to Mainrole Config.**`
@@ -146,12 +146,12 @@ async function removeMainrole({ guild, client }, role) {
     const settings = await getSettings(guild)
     if (role) {
         if (!guild.me.permissions.has('MANAGE_ROLES'))
-            return `<:cross:1317733546261217300> | **I don't have the \`MANAGE_ROLES\` permission**`
+            return `<a:Cross:1346485804368789525> | **I don't have the \`MANAGE_ROLES\` permission**`
     }
     if (!settings.mainrole.includes(role.id))
-        return `<:cross:1317733546261217300> | **This role is not present in the mainrole config.**`
+        return `<a:Cross:1346485804368789525> | **This role is not present in the mainrole config.**`
     if (settings.mainrole.length == 0)
-        return `<:cross:1317733546261217300> | There are no Mainrole in my config.`
+        return `<a:Cross:1346485804368789525> | There are no Mainrole in my config.`
     else settings.mainrole = settings.mainrole.filter((r) => r !== role.id)
     await settings.save()
     return `<a:tk:1290911171389423717> | **Successfully **removed** <@&${role.id}> from Mainrole Config.**`

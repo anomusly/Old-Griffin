@@ -311,19 +311,18 @@ module.exports = class Util {
                     iconURL: this.client.user.displayAvatarURL()
                 })
                 .setColor(this.client.color)
-
                 .setThumbnail(
                     interaction.guild.iconURL({
                         dynamic: true
                     })
                 )
-
+    
             if (funny === 'first') {
                 _commands = this.client.commands
                     .filter((x) => x.category && x.category === 'security')
                     .map((x) => `\`${x.name}\``)
                 embed.addField(
-                    `**<:stolen_emoji:1245605073036378183> Antinuke \`[${_commands.length}]\`**`,
+                    `**<:GriffinSecurity:1358543651998793799> Antinuke \`[${_commands.length}]\`**`,
                     _commands.sort().join(', ')
                 )
                 interaction
@@ -339,7 +338,7 @@ module.exports = class Util {
                     .filter((x) => x.category && x.category === 'mod')
                     .map((x) => `\`${x.name}\``)
                 embed.addField(
-                    `**<:icons_mod:1099577525514014761> Moderation \`[${_commands.length}]\`**`,
+                    `**<:GriffinModeration:1358543658072146261> Moderation \`[${_commands.length}]\`**`,
                     _commands.sort().join(', ')
                 )
                 interaction
@@ -355,7 +354,7 @@ module.exports = class Util {
                     .filter((x) => x.category && x.category === 'info')
                     .map((x) => `\`${x.name}\``)
                 embed.addField(
-                    `**<:stolen_emoji:1245602736813248522> Utility \`[${_commands.length}]\`**`,
+                    `**<:GriffinInformation:1358543672622452949> Utility \`[${_commands.length}]\`**`,
                     _commands.sort().join(', ')
                 )
                 interaction
@@ -371,7 +370,7 @@ module.exports = class Util {
                     .filter((x) => x.category && x.category === 'welcomer')
                     .map((x) => `\`${x.name}\``)
                 embed.addField(
-                    `**<:stolen_emoji:1245605497462325298>  Welcomer \`[${_commands.length}]\`**`,
+                    `**<:GriffinWelcome:1358543659859185964> Welcomer \`[${_commands.length}]\`**`,
                     _commands.sort().join(', ')
                 )
                 interaction
@@ -387,7 +386,7 @@ module.exports = class Util {
                     .filter((x) => x.category && x.category === 'voice')
                     .map((x) => `\`${x.name}\``)
                 embed.addField(
-                    `**<:stolen_emoji:1245602796636471326>  Voice \`[${_commands.length}]\`**`,
+                    `**<:GriffinVoice:1358543667349946470> Voice \`[${_commands.length}]\`**`,
                     _commands.sort().join(', ')
                 )
                 interaction
@@ -411,7 +410,7 @@ module.exports = class Util {
                         }
                     })
                 embed.addField(
-                    `**<:icons_human:1099575989589250078> Customrole \`[${cmd.length}]\`**`,
+                    `**<:GriffinCustomRole:1358543661964464330> Customrole \`[${cmd.length}]\`**`,
                     cmd.sort().join(', ')
                 )
                 await interaction
@@ -426,7 +425,7 @@ module.exports = class Util {
                     .filter((x) => x.category && x.category === 'logging')
                     .map((x) => `\`${x.name}\``)
                 embed.addField(
-                    `**<:stolen_emoji:1245606546759618622> Logging \`[${_commands.length}]\`**`,
+                    `**<:GriffinLogging:1358543675797274775> Logging \`[${_commands.length}]\`**`,
                     _commands.sort().join(', ')
                 )
                 interaction
@@ -450,7 +449,7 @@ module.exports = class Util {
                         }
                     })
                 embed.addField(
-                    `**<:stolen_emoji:1245603108298424381> Automod \`[${cmd.length}]\`**`,
+                    `**<:GriffinAutoresponder:1358543663583465682> Automod \`[${cmd.length}]\`**`,
                     cmd.sort().join(', ')
                 )
                 await interaction
@@ -464,6 +463,7 @@ module.exports = class Util {
             return
         }
     }
+    
 
 
     async manageAfk(message, client) {

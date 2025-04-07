@@ -168,7 +168,7 @@ module.exports = async (client) => {
                                 `\n**Hey!** ${message.author},\n **My Prefix here :-** \`${message.guild.prefix}\`\n\n**Type** \`${message.guild.prefix}\help\` **To See my Detailed Feature.**`
                             )
                             .setFooter({
-                                text: `Developed by 💞 By .rex4sure.`,
+                                text: `Developed by 💞 By Anomus.LY`,
                                 iconURL: user.displayAvatarURL({
                                     dynamic: true
                                 })

@@ -48,7 +48,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | I guess there is no bots in this server.`
+                                `<a:Cross:1346485804368789525> | I guess there is no bots in this server.`
                             )
                     ]
                 })
@@ -72,7 +72,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | No roles found.`
+                                `<a:Cross:1346485804368789525> | No roles found.`
                             )
                     ]
                 })

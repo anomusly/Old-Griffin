@@ -14,7 +14,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You didn't provided the server Id.`
+                            `<a:Cross:1346485804368789525> | You didn't provided the server Id.`
                         )
                 ]
             })
@@ -27,7 +27,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You didn't provided a valid server Id.`
+                            `<a:Cross:1346485804368789525> | You didn't provided a valid server Id.`
                         )
                 ]
             })
@@ -38,7 +38,7 @@ module.exports = {
                 new MessageEmbed()
                     .setColor(client.color)
                     .setDescription(
-                        `<:tick:1317818894546898985> | Successfully left **${name} (${id})**.`
+                        `<a:tick:1272061375539318795> | Successfully left **${name} (${id})**.`
                     )
             ]
         })

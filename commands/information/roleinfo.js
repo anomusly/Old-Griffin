@@ -15,7 +15,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You didn't provided a valid role.`
+                            `<a:Cross:1346485804368789525> | You didn't provided a valid role.`
                         )
                 ]
             })

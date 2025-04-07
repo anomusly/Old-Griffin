@@ -9,13 +9,13 @@ module.exports = {
     category: 'security',
     premium: false,
     run: async (client, message, args) => {
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 1) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | **Your Server Doesn't Meet My 40 Member Criteria**`
+                            `<a:Cross:1346485804368789525> | **Your Server Doesn't Meet My 40 Member Criteria**`
                         )
                 ]
             })
@@ -29,7 +29,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | **Only Server Owner Can Run This Command.!**`
+                            `<a:Cross:1346485804368789525> | **Only Server Owner Can Run This Command.!**`
                         )
                 ]
             })
@@ -70,7 +70,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | **Please Provide a Valid User Mention or ID to Set as Extra Owner!**`
+                                `<a:Cross:1346485804368789525> | **Please Provide a Valid User Mention or ID to Set as Extra Owner!**`
                             )
                     ]
                 })
@@ -80,7 +80,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | **You Cannot Add Any Bots to Extraowner** `
+                                `<a:Cross:1346485804368789525> | **You Cannot Add Any Bots to Extraowner** `
                             )
                     ]
                 })
@@ -94,7 +94,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:tick:1317818894546898985> | **Successfully Added ${user} As Extraowner**`
+                                `<a:tick:1272061375539318795> | **Successfully Added ${user} As Extraowner**`
                             )
                     ]
                 })
@@ -107,7 +107,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:tick:1317818894546898985> | **There Is No Extraowner Configuration In This Server.!**`
+                                `<a:tick:1272061375539318795> | **There Is No Extraowner Configuration In This Server.!**`
                             )
                     ]
                 })
@@ -118,7 +118,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:tick:1317818894546898985> | **Successfully Disabled Extraowner Configuration.!**`
+                                `<a:tick:1272061375539318795> | **Successfully Disabled Extraowner Configuration.!**`
                             )
                     ]
                 })
@@ -131,7 +131,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | **No Extraowner is Set.!**`
+                                `<a:Cross:1346485804368789525> | **No Extraowner is Set.!**`
                             )
                     ]
                 })

@@ -12,7 +12,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have \`Manage Emoji\` perms to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have \`Manage Emoji\` perms to use this command.`
                         )
                 ]
             });
@@ -24,7 +24,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | I must have \`Manage Emoji\` perms to use this command.`
+                            `<a:Cross:1346485804368789525> | I must have \`Manage Emoji\` perms to use this command.`
                         )
                 ]
             });
@@ -52,7 +52,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | The replied message doesn't contain a valid emoji.`
+                            `<a:Cross:1346485804368789525> | The replied message doesn't contain a valid emoji.`
                         )
                 ]
             });
@@ -101,7 +101,7 @@ module.exports = {
                             new MessageEmbed()
                                 .setColor(client.color)
                                 .setDescription(
-                                    `<:tick:1317818894546898985> | Successfully added the emoji ${newEmoji.toString()}.`
+                                    `<a:tick:1272061375539318795> | Successfully added the emoji ${newEmoji.toString()}.`
                                 )
                         ],
                         ephemeral: true
@@ -112,7 +112,7 @@ module.exports = {
                             new MessageEmbed()
                                 .setColor(client.color)
                                 .setDescription(
-                                    `<:cross:1317733546261217300> | Unable to add the emoji. Possible reasons: \`Slots are Full\` or \`Mass emojis added\`.`
+                                    `<a:Cross:1346485804368789525> | Unable to add the emoji. Possible reasons: \`Slots are Full\` or \`Mass emojis added\`.`
                                 )
                         ],
                         ephemeral: true
@@ -133,7 +133,7 @@ module.exports = {
                             new MessageEmbed()
                                 .setColor(client.color)
                                 .setDescription(
-                                    `<:cross:1317733546261217300> | Unable to add the sticker. Possible reasons: \`Slots are Full\` or \`Invalid Format\`.`
+                                    `<a:Cross:1346485804368789525> | Unable to add the sticker. Possible reasons: \`Slots are Full\` or \`Invalid Format\`.`
                                 )
                         ],
                         ephemeral: true

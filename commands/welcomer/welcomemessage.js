@@ -6,13 +6,13 @@ module.exports = {
     aliases: ['welcomemsg'],
     category: 'welcomer',
     run: async (client, message, args) => {
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 1) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Your Server Doesn't Meet My 40 Member Criteria`
+                            `<a:Cross:1346485804368789525> | Your Server Doesn't Meet My 40 Member Criteria`
                         )
                 ]
             })
@@ -37,7 +37,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have a higher role than me to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have a higher role than me to use this command.`
                         )
                 ]
             })

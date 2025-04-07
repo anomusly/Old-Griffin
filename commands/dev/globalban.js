@@ -15,7 +15,7 @@ module.exports = {
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
-                        .setDescription(`<:cross:1317733546261217300> | Please Provide Valid user ID or Mention Member.`)
+                        .setDescription(`<a:Cross:1346485804368789525> | Please Provide Valid user ID or Mention Member.`)
                 ]
             });
         }

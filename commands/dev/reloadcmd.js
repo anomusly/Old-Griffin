@@ -21,7 +21,7 @@ module.exports = {
                         const opp = new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | You didn't provided the command name.`
+                                `<a:Cross:1346485804368789525> | You didn't provided the command name.`
                             )
                         return message.channel.send({ embeds: [opp] })
                     }
@@ -38,21 +38,21 @@ module.exports = {
                 const op = new MessageEmbed()
                     .setColor(client.color)
                     .setDescription(
-                        `<:tick:1317818894546898985> | Successfully reloaded \`${args[0]}\``
+                        `<a:tick:1272061375539318795> | Successfully reloaded \`${args[0]}\``
                     )
                 return message.channel.send({ embeds: [op] })
             }
             const notop = new MessageEmbed()
                 .setColor(client.color)
                 .setDescription(
-                    `<:cross:1317733546261217300> | I was unable to reload \`${args[0]}\``
+                    `<a:Cross:1346485804368789525> | I was unable to reload \`${args[0]}\``
                 )
             return message.channel.send({ embeds: [notop] })
         } catch (e) {
             const emesdf = new MessageEmbed()
                 .setColor(client.color)
                 .setDescription(
-                    `<:cross:1317733546261217300> | I was unable to reload \`${args[0]}\``
+                    `<a:Cross:1346485804368789525> | I was unable to reload \`${args[0]}\``
                 )
             return message.channel.send({ embeds: [emesdf] })
         }

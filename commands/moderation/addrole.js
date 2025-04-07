@@ -27,7 +27,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have \`Manage Roles\` permissions to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have \`Manage Roles\` permissions to use this command.`
                         )
                 ]
             })
@@ -38,7 +38,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | I don't have \`Manage Roles\` permissions to execute this command.`
+                            `<a:Cross:1346485804368789525> | I don't have \`Manage Roles\` permissions to execute this command.`
                         )
                 ]
             })
@@ -53,7 +53,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have a higher role than me to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have a higher role than me to use this command.`
                         )
                 ]
             })
@@ -71,7 +71,7 @@ module.exports = {
                         embed
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | You didn't provided a valid role.\n\`${message.guild.prefix}role all <role>\``
+                                `<a:Cross:1346485804368789525> | You didn't provided a valid role.\n\`${message.guild.prefix}role all <role>\``
                             )
                     ]
                 })
@@ -174,7 +174,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You didn't used the command correctly.\n\`${message.guild.prefix}role <user> <role>\``
+                            `<a:Cross:1346485804368789525> | You didn't used the command correctly.\n\`${message.guild.prefix}role <user> <role>\``
                         )
                 ]
             })
@@ -187,7 +187,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You didn't provided a valid role.\n\`${message.guild.prefix}role <user> <role>\``
+                            `<a:Cross:1346485804368789525> | You didn't provided a valid role.\n\`${message.guild.prefix}role <user> <role>\``
                         )
                 ]
             })
@@ -198,7 +198,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | This Role Is Managed By Integration`
+                            `<a:Cross:1346485804368789525> | This Role Is Managed By Integration`
                         )
                 ]
             })
@@ -209,7 +209,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | I can't provide this role as my highest role is either below or equal to the provided role.`
+                            `<a:Cross:1346485804368789525> | I can't provide this role as my highest role is either below or equal to the provided role.`
                         )
                 ]
             })
@@ -220,7 +220,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | I can't provide this role as your highest role is either below or equal to the provided role.`
+                            `<a:Cross:1346485804368789525> | I can't provide this role as your highest role is either below or equal to the provided role.`
                         )
                 ]
             })
@@ -236,7 +236,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:tick:1317818894546898985> | Successfully removed <@&${role.id}> from <@${member.id}>.`
+                            `<a:tick:1272061375539318795> | Successfully removed <@&${role.id}> from <@${member.id}>.`
                         )
                 ]
             })
@@ -250,7 +250,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:tick:1317818894546898985> | Successfully added <@&${role.id}> to <@${member.id}>.`
+                            `<a:tick:1272061375539318795> | Successfully added <@&${role.id}> to <@${member.id}>.`
                         )
                 ]
             })

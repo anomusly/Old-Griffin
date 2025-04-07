@@ -4,7 +4,7 @@ const { MessageEmbed } = require('discord.js');
 let enable = `<:disable:1318037005493342280><:enable:1318037008500658248>`
 let disable = `<:enable:1318037008500658248><:disable:1318037005493342280>`
 let protect = `<:mod:1318037003086073886>`
-let hii = `<:reddot:1317860462028914700>`;
+let hii = `<:GriffinDot:1358732446237200404>`;
 
 module.exports = {
     name: 'antinuke',
@@ -12,12 +12,12 @@ module.exports = {
     category: 'security',
     premium: false,
     run: async (client, message, args) => {
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 1) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
-                        .setDescription(`<:cross:1317733546261217300> | **Your Server Doesn't Meet My 40 Member Criteria**`)
+                        .setDescription(`<a:Cross:1346485804368789525> | **Your Server Doesn't Meet My 40 Member Criteria**`)
                 ]
             });
         }
@@ -29,7 +29,7 @@ module.exports = {
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
-                        .setDescription(`<:cross:1317733546261217300> | Only Server Owner Or Extraowner Can Run This Command.!`)
+                        .setDescription(`<a:Cross:1346485804368789525> | Only Server Owner Or Extraowner Can Run This Command.!`)
                 ]
             });
         }
@@ -37,7 +37,7 @@ module.exports = {
         if (!own && !(message?.guild.members.cache.get(client.user.id).roles.highest.position <= message?.member?.roles?.highest.position)) {
             const higherole = new MessageEmbed()
                 .setColor(client.color)
-                .setDescription(`<:cross:1317733546261217300> | Only Server Owner Or Extraowner Can Run This Command.!`);
+                .setDescription(`<a:Cross:1346485804368789525> | Only Server Owner Or Extraowner Can Run This Command.!`);
             return message.channel.send({ embeds: [higherole] });
         }
 

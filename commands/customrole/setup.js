@@ -10,13 +10,13 @@ module.exports = {
     subcommand: ['add', 'remove', 'config', 'reset', 'list', 'reqrole'],
     category: 'customrole',
     run: async (client, message, args) => {
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 1) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Your Server Doesn't Meet My 40 Member Criteria`
+                            `<a:Cross:1346485804368789525> | Your Server Doesn't Meet My 40 Member Criteria`
                         )
                 ]
             })
@@ -29,7 +29,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have \`Manage Roles\` permissions to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have \`Manage Roles\` permissions to use this command.`
                         )
                 ]
             })
@@ -40,7 +40,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | I don't have \`Manage Roles\` permissions to execute this command.`
+                            `<a:Cross:1346485804368789525> | I don't have \`Manage Roles\` permissions to execute this command.`
                         )
                 ]
             })
@@ -55,7 +55,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have a higher role than me to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have a higher role than me to use this command.`
                         )
                 ]
             })
@@ -137,7 +137,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | ${message.guild.prefix}setup add <name> <role>`
+                                `<a:Cross:1346485804368789525> | ${message.guild.prefix}setup add <name> <role>`
                             )
                     ]
                 })
@@ -148,7 +148,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | **Custom role** names cannot contain **mentions**. Please provide a different **name**.`
+                                `<a:Cross:1346485804368789525> | **Custom role** names cannot contain **mentions**. Please provide a different **name**.`
                             )
                     ]
                 });
@@ -159,7 +159,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | ${message.guild.prefix}setup add ${args[1]} <role>`
+                                `<a:Cross:1346485804368789525> | ${message.guild.prefix}setup add ${args[1]} <role>`
                             )
                     ]
                 })
@@ -177,7 +177,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | Role **not** found!`
+                                `<a:Cross:1346485804368789525> | Role **not** found!`
                             )
                     ]
                 })
@@ -187,7 +187,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | <@&${role.id}> isn't a **server** role!`
+                                `<a:Cross:1346485804368789525> | <@&${role.id}> isn't a **server** role!`
                             )
                     ]
                 })
@@ -222,7 +222,7 @@ module.exports = {
                     embeds: [
                         new MessageEmbed()
                             .setDescription(
-                                `<:cross:1317733546261217300> | I can't **add** <@&${role.id}> in my **custom role** list because it has ${new Permissions(
+                                `<a:Cross:1346485804368789525> | I can't **add** <@&${role.id}> in my **custom role** list because it has ${new Permissions(
                                     role.permissions.bitfield
                                 )
                                     .toArray()
@@ -322,7 +322,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                     .setColor(client.color)
                     .setDescription(
-                        `<:cross:1317733546261217300> | Oops! The role with the name **${roleName}** couldn't be found in my custom role setups. Double-check the name and try again.`
+                        `<a:Cross:1346485804368789525> | Oops! The role with the name **${roleName}** couldn't be found in my custom role setups. Double-check the name and try again.`
                     )
                 return message.channel.send({ embeds: [embed] })
             }
@@ -359,7 +359,7 @@ module.exports = {
                     .setColor(client.color)
                     .setTitle(`Nothing to Show`)
                     .setDescription(
-                        `<:cross:1317733546261217300> | Oops! There's nothing to display for custom role setups.`
+                        `<a:Cross:1346485804368789525> | Oops! There's nothing to display for custom role setups.`
                     )
                     .setAuthor({
                         name: message.guild.name,
@@ -381,7 +381,7 @@ module.exports = {
                         .setColor(client.color)
                         .setTitle(`Nothing to Show`)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Oops! There's nothing to display for custom role setups.`
+                            `<a:Cross:1346485804368789525> | Oops! There's nothing to display for custom role setups.`
                         )
                         .setAuthor({
                             name: message.guild.name,
@@ -522,7 +522,7 @@ module.exports = {
             ) {
                 const embed = new MessageEmbed()
                     .setColor(client.color)
-                    .setTitle(`<:cross:1317733546261217300> Role Position Issue`)
+                    .setTitle(`<a:Cross:1346485804368789525> Role Position Issue`)
                     .setDescription(
                         `<@&${role.id}> cannot be assigned because its position is either equal to or higher than your highest role. Please adjust your roles or choose a role with a lower position.`
                     )

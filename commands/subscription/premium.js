@@ -10,7 +10,7 @@ module.exports = {
         try {
             const embed = new MessageEmbed()
                 .setColor('#0x2b2d31')
-                .setFooter(`Developed By 💞 By .rex4sure.`);
+                .setFooter(`Developed By 💞 By Anomus.LY`);
             
             const row = new MessageActionRow().addComponents(
                 new MessageButton()

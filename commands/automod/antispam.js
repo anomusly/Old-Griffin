@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js')
 let enable = `<:disable:1318037005493342280><:enable:1318037008500658248>`
 let disable = `<:enable:1318037008500658248><:disable:1318037005493342280>`
 let protect = `<:mod:1318037003086073886>`
-let hii = `<:reddot:1317860462028914700>`
+let hii = `<:GriffinDot:1358732446237200404>`
 const wait = require('wait')
 
 module.exports = {
@@ -15,13 +15,13 @@ module.exports = {
     run: async (client, message, args) => {
         const embed = new MessageEmbed().setColor(client.color)
 
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 1) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Your Server Doesn't Meet My 40 Member Criteria`
+                            `<a:Cross:1346485804368789525> | Your Server Doesn't Meet My 40 Member Criteria`
                         )
                 ]
             })
@@ -33,7 +33,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have \`Administrator\` permissions to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have \`Administrator\` permissions to use this command.`
                         )
                 ]
             })
@@ -44,7 +44,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | I don't have \`Administrator\` permissions to execute this command.`
+                            `<a:Cross:1346485804368789525> | I don't have \`Administrator\` permissions to execute this command.`
                         )
                 ]
             })
@@ -59,7 +59,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have a higher role than me to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have a higher role than me to use this command.`
                         )
                 ]
             })
@@ -330,7 +330,7 @@ module.exports = {
                     const embedMessage = new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:tick:1317818894546898985> | **Spam Threshold Updated**`
+                            `<a:tick:1272061375539318795> | **Spam Threshold Updated**`
                         )
                         .addField('New Spam Threshold', `${limit}`, true)
                         .setTimestamp()
@@ -343,7 +343,7 @@ module.exports = {
                     const embedMessage = new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | **Error: Invalid Message Count Limit**`
+                            `<a:Cross:1346485804368789525> | **Error: Invalid Message Count Limit**`
                         )
                         .addField(
                             'Valid Range',

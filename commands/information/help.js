@@ -25,17 +25,17 @@ module.exports = {
 
             // Add fields sequentially
             embed.addField('Aliases', `\`${aliases}\``);
-            
+
             // Check if the command has subcommands
             if (command.subcommand && command.subcommand.length > 0) {
                 const subcommands = command.subcommand.map(subcmd => `\`${subcmd}\``).join(', ');
                 embed.addField('Subcommands', subcommands);
             }
-            
+
             if (typeof command.premium !== 'undefined') {
                 embed.addField('Premium', command.premium ? `\`Yes\`` : `\`No\``);
             }
-            
+
             embed.addField('Usage', `\`${prefix}${command.name}\``);
 
             // Set author, thumbnail, and footer
@@ -44,7 +44,7 @@ module.exports = {
                 .setFooter('Trick Is Love', 'https://cdn.discordapp.com/avatars/760143551920078861/a6f1e1989177fbb4c7f3d44498418d22.png?size=2048');
 
             return message.channel.send({ embeds: [embed] });
-        }  
+        }
         // Create a MessageSelectMenu
         const selectMenu = new MessageSelectMenu()
             .setCustomId('categorySelect')
@@ -119,7 +119,7 @@ module.exports = {
                     label: 'All Commands',
                     value: 'All Commands',
                     description: 'All Commands',
-                }                                                 
+                }
             ]);
 
         // Buttons
@@ -150,38 +150,41 @@ module.exports = {
             })
             .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
             .setDescription(
-                `Hello ! I'm **${client.user.username}**, your all-in-one server management and security bot with powerful features.\n\n \<:reddot:1317860462028914700> **Prefix for this server** \`${prefix}\`\n<:reddot:1317860462028914700>  **Total Commands: **\`${client.commands.size}\`\n<:reddot:1317860462028914700>  **Type ${prefix}dangermode enable  to enhance security!**`)
+                `Hello ! I'm **${client.user.username}**, your all-in-one server management and security bot with powerful features.\n\n \<:GriffinDot:1358732446237200404> **Prefix for this server** \`${prefix}\`\n<:GriffinDot:1358732446237200404>  **Total Commands: **\`${client.commands.size}\`\n<:GriffinDot:1358732446237200404>  **Type ${prefix}dangermode enable  to enhance security!**`
+            )
             .addField('`<> - Required | () - Optional`', '\u200B', false)
             .addField(
-                    '__Modules__',
-                    `
-                    <:antinuke:1317733398185508924> **AntiNuke**
-                    <:moderation:1317735997827448853> **Moderation**
-                    <:utility:1317735995222786048> **Utility**
-                    <:welcomer:1317735981360877658> **Welcomer**
-                    <:reactionroles:1317735978659741696> **Reaction Role**
-                    <:ticket:1317735976252084234> **Ticket**
-                    <:voice:1317735973542690836> **Voice**
-                    <:customrole:1317735971118387264> **Customrole**
-                    <:logging:1317735967729123348> **Logging**
-                    <:automod:1317735963761578054> **Automod**
-                    <:autoresponder:1317735961169231872> **Autorespond**
-                    <:giveway:1317735958606647349> **Giveaway**
-                    <:fun:1317735956601765921> **Fun**
-                    `,
-                    false
-                )
-                .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
-                .addField(
-                    'Links',
-                    `[Support](https://discord.gg/hindustani) | [Invite Me](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot)`,
-                    true
-                )
-                .setFooter({
-                    text: `Developed by 💞 By .rex4sure.`,
-                    iconURL: 'https://images-ext-1.discordapp.net/external/R5FaJYZtxJKRpud5nY_i3Vg4NVAkQuANcTuLOt3hckg/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/1237086498076098762/a66bb0f21cdc7c397f3ab3bc87445d98.webp?width=662&height=662'
-                });
-                
+                '__Modules__',
+                `
+                <:GriffinSecurity:1358543651998793799> **Security**
+                <:GriffinGeneral:1358543653877973003> **General**
+                <:GriffinAutorole:1358543656184844288> **Autorole**
+                <:GriffinModeration:1358543658072146261> **Moderation**
+                <:GriffinWelcome:1358543659859185964> **Welcome**
+                <:GriffinCustomRole:1358543661964464330> **Custom Role**
+                <:GriffinAutoresponder:1358543663583465682> **Autoresponder**
+                <:GriffinVanityRole:1358543665848651984> **Vanity Role**
+                <:GriffinVoice:1358543667349946470> **Voice**
+                <:GriffinSearch:1358543669283786854> **Search**
+                <:GriffinMedia:1358543671020228871> **Media**
+                <:GriffinInformation:1358543672622452949> **Information**
+                <:GriffinActivity:1358543674245513256> **Activity**
+                <:GriffinLogging:1358543675797274775> **Logging**
+                <:GriffinIgnore:1358543677223469230> **Ignore**
+                `,
+                false
+            )
+            .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
+            .addField(
+                'Links',
+                `[Support](https://discord.gg/hindustani) | [Invite Me](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot)`,
+                true
+            )
+            .setFooter({
+                text: `Developed by 💞 By Anomus.LY`,
+                iconURL: 'https://images-ext-1.discordapp.net/external/R5FaJYZtxJKRpud5nY_i3Vg4NVAkQuANcTuLOt3hckg/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/1237086498076098762/a66bb0f21cdc7c397f3ab3bc87445d98.webp?width=662&height=662'
+            });
+
 
         const helpMessage = await message.channel.send({ embeds: [initialEmbed], components: [new MessageActionRow().addComponents(selectMenu), buttons] });
 
@@ -238,7 +241,7 @@ module.exports = {
                         commands = client.commands
                             .filter((x) => x.category && x.category === 'automod')
                             .map((x) => `\`${x.name}\``);
-                        break;   
+                        break;
                     case 'customrole':
                         commands = client.commands
                             .filter((x) => x.category && x.category === 'customrole')
@@ -253,33 +256,33 @@ module.exports = {
                         commands = client.commands
                             .filter((x) => x.category && x.category === 'tic')
                             .map((x) => `\`${x.name}\``);
-                        break; 
+                        break;
                     case 'Giveaway':
                         commands = client.commands
                             .filter((x) => x.category && x.category === 'give')
                             .map((x) => `\`${x.name}\``);
-                        break;  
+                        break;
                     case 'Autorespond':
                         commands = client.commands
                             .filter((x) => x.category && x.category === 'autores')
                             .map((x) => `\`${x.name}\``);
-                        break;  
+                        break;
                     case 'Fun':
                         commands = client.commands
                             .filter((x) => x.category && x.category === 'fun')
                             .map((x) => `\`${x.name}\``);
-                        break; 
+                        break;
                     case 'Reactionrole':
                         commands = client.commands
                             .filter((x) => x.category && x.category === 'rrole')
                             .map((x) => `\`${x.name}\``);
-                        break;  
+                        break;
                     case 'AI':
                         commands = client.commands
                             .filter((x) => x.category && x.category === 'ai')
                             .map((x) => `\`${x.name}\``);
-                        break;                                                                                                
-                                                
+                        break;
+
                 }
                 const updatedEmbed = updateEmbed(new MessageEmbed(initialEmbed), category, commands); // Create a new embed based on the initial one
                 await helpMessage.edit({ embeds: [updatedEmbed] });

@@ -43,7 +43,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have a higher role than me to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have a higher role than me to use this command.`
                         )
                 ]
             })
@@ -60,7 +60,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:tick:1317818894546898985> | Successfully Undeafened ${i} Members in ${message.member.voice.channel}!`
+                            `<a:tick:1272061375539318795> | Successfully Undeafened ${i} Members in ${message.member.voice.channel}!`
                         )
                 ]
             });

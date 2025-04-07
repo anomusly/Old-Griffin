@@ -13,7 +13,7 @@ const booster = {
     TIER_2: 'Level: 2',
     TIER_3: 'Level: 3'
 }
-const disabled = '<:cross:1317733546261217300>'
+const disabled = '<a:Cross:1346485804368789525>'
 const enabled = '<a:tk:1290911171389423717>'
 
 module.exports = {

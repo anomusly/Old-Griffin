@@ -15,13 +15,13 @@ module.exports = {
      * @param {Satxler} client
      */
     run: async (client, message, args) => {
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 1) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Your Server Doesn't Meet My 40 Member Criteria`
+                            `<a:Cross:1346485804368789525> | Your Server Doesn't Meet My 40 Member Criteria`
                         )
                 ]
             })
@@ -37,7 +37,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Only the server owner or an extra owner with a higher role than mine is authorized to execute this command.`
+                            `<a:Cross:1346485804368789525> | Only the server owner or an extra owner with a higher role than mine is authorized to execute this command.`
                         )
                 ]
             })
@@ -52,7 +52,7 @@ module.exports = {
             const higherole = new MessageEmbed()
                 .setColor(client.color)
                 .setDescription(
-                    `<:cross:1317733546261217300> | Only the server owner or extra owner with a higher role than mine can execute this command.
+                    `<a:Cross:1346485804368789525> | Only the server owner or extra owner with a higher role than mine can execute this command.
 
 
 
@@ -116,7 +116,7 @@ To enable use antinuke enable ** `)
                             new MessageEmbed()
                                 .setColor(client.color)
                                 .setDescription(
-                                    `<:cross:1317733546261217300> | <@${member.id}> is already a whitelisted member.`
+                                    `<a:Cross:1346485804368789525> | <@${member.id}> is already a whitelisted member.`
                                 )
                         ]
                     })
@@ -266,7 +266,7 @@ To enable use antinuke enable ** `)
                                     client.user.displayAvatarURL()
                             })
                             .setFooter({
-                                text: `Developed by 💞 By .rex4sure.`
+                                text: `Developed by 💞 By Anomus.LY`
                             })
                             .setColor(client.color)
                             .setDescription(
@@ -299,7 +299,7 @@ To enable use antinuke enable ** `)
                                     client.user.displayAvatarURL()
                             })
                             .setFooter({
-                                text: `Developed by 💞 By .rex4sure.`
+                                text: `Developed by 💞 By Anomus.LY`
                             })
                             .setColor(client.color)
                             .setDescription(
@@ -373,7 +373,7 @@ To enable use antinuke enable ** `)
                                             }) || client.user.displayAvatarURL()
                                     })
                                     .setFooter({
-                                        text: `Developed by 💞 By .rex4sure.`
+                                        text: `Developed by 💞 By Anomus.LY`
                                     })
                                     .setColor(client.color)
                                     .setDescription(
@@ -451,7 +451,7 @@ To enable use antinuke enable ** `)
                                                 client.user.displayAvatarURL()
                                         })
                                         .setFooter({
-                                            text: `Developed by 💞 By .rex4sure.`
+                                            text: `Developed by 💞 By Anomus.LY`
                                         })
                                         .setColor(client.color)
                                         .setDescription(
@@ -491,11 +491,11 @@ To enable use antinuke enable ** `)
                                                 client.user.displayAvatarURL()
                                         })
                                         .setFooter({
-                                            text: `Developed by 💞 By .rex4sure.`
+                                            text: `Developed by 💞 By Anomus.LY`
                                         })
                                         .setColor(client.color)
                                         .setDescription(
-                                            `${data.ban ? '<:icons_cross:1245257113824137298><:tick:1317818894546898985>' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Ban**\n${data.kick ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Kick**\n${data.prune ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Prune**\n${data.botadd ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Bot Add**\n${data.serverup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Server Update\n${data.memup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: Member Role Update**\n${data.chcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Create**\n${data.chdl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: ** Channel Delete**\n${data.chup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Update**\n${data.rlcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Create**\n${data.rldl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Delete**\n${data.rlup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Update**\n${data.meneve ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Mention** @everyone\n${data.mngweb ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Webhook Management**\n${data.mngstemo ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Emojis & Stickers Management**`
+                                            `${data.ban ? '<:icons_cross:1245257113824137298><a:tick:1272061375539318795>' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Ban**\n${data.kick ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Kick**\n${data.prune ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Prune**\n${data.botadd ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Bot Add**\n${data.serverup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Server Update\n${data.memup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: Member Role Update**\n${data.chcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Create**\n${data.chdl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: ** Channel Delete**\n${data.chup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Update**\n${data.rlcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Create**\n${data.rldl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Delete**\n${data.rlup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Update**\n${data.meneve ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Mention** @everyone\n${data.mngweb ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Webhook Management**\n${data.mngstemo ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Emojis & Stickers Management**`
                                         )
                                         .addFields(
                                             {
@@ -532,11 +532,11 @@ To enable use antinuke enable ** `)
                                                 client.user.displayAvatarURL()
                                         })
                                         .setFooter({
-                                            text: `Developed by 💞 By .rex4sure.`
+                                            text: `Developed by 💞 By Anomus.LY`
                                         })
                                         .setColor(client.color)
                                         .setDescription(
-                                            `${data.ban ? '<:icons_cross:1245257113824137298><:tick:1317818894546898985> ' : '<:icons_cross:1245257113824137298><:tick:1317818894546898985>'}: **Ban**\n${data.kick ? '<:icons_cross:1245257113824137298><:tick:1317818894546898985>' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Kick**\n${data.prune ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:icons_cross:1245257113824137298><:tick:1317818894546898985>'}: **Prune**\n${data.botadd ? '<:icons_cross:1245257113824137298><:tick:1317818894546898985> ' : '<:icons_cross:1245257113824137298><:tick:1317818894546898985> '}: **Bot Add**\n${data.serverup ? '<:icons_cross:1245257113824137298><:tick:1317818894546898985> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Server Update\n${data.memup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: Member Role Update**\n${data.chcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Create**\n${data.chdl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: ** Channel Delete**\n${data.chup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Update**\n${data.rlcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Create**\n${data.rldl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Delete**\n${data.rlup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Update**\n${data.meneve ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Mention** @everyone\n${data.mngweb ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Webhook Management**\n${data.mngstemo ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Emojis & Stickers Management**`
+                                            `${data.ban ? '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> ' : '<:icons_cross:1245257113824137298><a:tick:1272061375539318795>'}: **Ban**\n${data.kick ? '<:icons_cross:1245257113824137298><a:tick:1272061375539318795>' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Kick**\n${data.prune ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:icons_cross:1245257113824137298><a:tick:1272061375539318795>'}: **Prune**\n${data.botadd ? '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> ' : '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> '}: **Bot Add**\n${data.serverup ? '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Server Update\n${data.memup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: Member Role Update**\n${data.chcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Create**\n${data.chdl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: ** Channel Delete**\n${data.chup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Update**\n${data.rlcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Create**\n${data.rldl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Delete**\n${data.rlup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Update**\n${data.meneve ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Mention** @everyone\n${data.mngweb ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Webhook Management**\n${data.mngstemo ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Emojis & Stickers Management**`
                                         )
                                         .addFields(
                                             {
@@ -572,11 +572,11 @@ To enable use antinuke enable ** `)
                                                 client.user.displayAvatarURL()
                                         })
                                         .setFooter({
-                                            text: `Developed by 💞 By .rex4sure.`
+                                            text: `Developed by 💞 By Anomus.LY`
                                         })
                                         .setColor(client.color)
                                         .setDescription(
-                                            `${data.ban ? '<:icons_cross:1245257113824137298><:tick:1317818894546898985> ' : '<:icons_cross:1245257113824137298><:tick:1317818894546898985> '}: **Ban**\n${data.kick ? '<:icons_cross:1245257113824137298><:tick:1317818894546898985> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Kick**\n${data.prune ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Prune**\n${data.botadd ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Bot Add**\n${data.serverup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Server Update\n${data.memup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: Member Role Update**\n${data.chcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Create**\n${data.chdl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: ** Channel Delete**\n${data.chup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Update**\n${data.rlcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Create**\n${data.rldl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Delete**\n${data.rlup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Update**\n${data.meneve ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Mention** @everyone\n${data.mngweb ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Webhook Management**\n${data.mngstemo ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Emojis & Stickers Management**`
+                                            `${data.ban ? '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> ' : '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> '}: **Ban**\n${data.kick ? '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Kick**\n${data.prune ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Prune**\n${data.botadd ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Bot Add**\n${data.serverup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Server Update\n${data.memup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: Member Role Update**\n${data.chcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Create**\n${data.chdl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: ** Channel Delete**\n${data.chup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Update**\n${data.rlcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Create**\n${data.rldl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Delete**\n${data.rlup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Update**\n${data.meneve ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Mention** @everyone\n${data.mngweb ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Webhook Management**\n${data.mngstemo ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Emojis & Stickers Management**`
                                         )
                                         .addFields(
                                             {
@@ -652,11 +652,11 @@ To enable use antinuke enable ** `)
                                                 client.user.displayAvatarURL()
                                         })
                                         .setFooter({
-                                            text: `Developed by 💞 By .rex4sure.`
+                                            text: `Developed by 💞 By Anomus.LY`
                                         })
                                         .setColor(client.color)
                                         .setDescription(
-                                            `${data.ban ? '<:icons_cross:1245257113824137298><:tick:1317818894546898985> ' : '<:icons_cross:1245257113824137298><:tick:1317818894546898985> '}: **Ban**\n${data.kick ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Kick**\n${data.prune ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Prune**\n${data.botadd ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Bot Add**\n${data.serverup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Server Update\n${data.memup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: Member Role Update**\n${data.chcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Create**\n${data.chdl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: ** Channel Delete**\n${data.chup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Update**\n${data.rlcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Create**\n${data.rldl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Delete**\n${data.rlup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Update**\n${data.meneve ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Mention** @everyone\n${data.mngweb ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Webhook Management**\n${data.mngstemo ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Emojis & Stickers Management**`
+                                            `${data.ban ? '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> ' : '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> '}: **Ban**\n${data.kick ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Kick**\n${data.prune ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Prune**\n${data.botadd ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Bot Add**\n${data.serverup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Server Update\n${data.memup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: Member Role Update**\n${data.chcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Create**\n${data.chdl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: ** Channel Delete**\n${data.chup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Update**\n${data.rlcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Create**\n${data.rldl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Delete**\n${data.rlup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Update**\n${data.meneve ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Mention** @everyone\n${data.mngweb ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Webhook Management**\n${data.mngstemo ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Emojis & Stickers Management**`
                                         )
                                         .addFields(
                                             {
@@ -696,7 +696,7 @@ To enable use antinuke enable ** `)
                                         })
                                         .setColor(client.color)
                                         .setDescription(
-                                            `${data.ban ? '<:icons_cross:1245257113824137298><:tick:1317818894546898985> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Ban**\n${data.kick ? '<:icons_cross:1245257113824137298><:tick:1317818894546898985> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Kick**\n${data.prune ? '<:icons_cross:1245257113824137298><:tick:1317818894546898985> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Prune**\n${data.botadd ? '<:icons_cross:1245257113824137298><:tick:1317818894546898985> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Bot Add**\n${data.serverup ? '<:icons_cross:1245257113824137298><:tick:1317818894546898985> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Server Update\n${data.memup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: Member Role Update**\n${data.chcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Create**\n${data.chdl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: ** Channel Delete**\n${data.chup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Update**\n${data.rlcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Create**\n${data.rldl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Delete**\n${data.rlup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Update**\n${data.meneve ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Mention** @everyone\n${data.mngweb ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Webhook Management**\n${data.mngstemo ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Emojis & Stickers Management**`
+                                            `${data.ban ? '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Ban**\n${data.kick ? '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Kick**\n${data.prune ? '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Prune**\n${data.botadd ? '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Bot Add**\n${data.serverup ? '<:icons_cross:1245257113824137298><a:tick:1272061375539318795> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Server Update\n${data.memup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: Member Role Update**\n${data.chcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Create**\n${data.chdl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: ** Channel Delete**\n${data.chup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Channel Update**\n${data.rlcr ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Create**\n${data.rldl ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Delete**\n${data.rlup ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Role Update**\n${data.meneve ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Mention** @everyone\n${data.mngweb ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Webhook Management**\n${data.mngstemo ? '<:Satxler_DNo:1218049715799851058><:enable:1318037008500658248> ' : '<:disable:1318037005493342280><:Satxler_Eno:1218051067389153290> '}: **Emojis & Stickers Management**`
                                         )
                                         .addFields(
                                             {
@@ -732,7 +732,7 @@ To enable use antinuke enable ** `)
                                                 client.user.displayAvatarURL()
                                         })
                                         .setFooter({
-                                            text: `Developed by 💞 By .rex4sure.`
+                                            text: `Developed by 💞 By Anomus.LY`
                                         })
                                         .setColor(client.color)
                                         .setDescription(
@@ -772,7 +772,7 @@ To enable use antinuke enable ** `)
                                                 client.user.displayAvatarURL()
                                         })
                                         .setFooter({
-                                            text: `Developed by 💞 By .rex4sure.`
+                                            text: `Developed by 💞 By Anomus.LY`
                                         })
                                         .setColor(client.color)
                                         .setDescription(
@@ -812,7 +812,7 @@ To enable use antinuke enable ** `)
                                                 client.user.displayAvatarURL()
                                         })
                                         .setFooter({
-                                            text: `Developed by 💞 By .rex4sure.`
+                                            text: `Developed by 💞 By Anomus.LY`
                                         })
                                         .setColor(client.color)
                                         .setDescription(
@@ -852,7 +852,7 @@ To enable use antinuke enable ** `)
                                                 client.user.displayAvatarURL()
                                         })
                                         .setFooter({
-                                            text: `Developed by 💞 By .rex4sure.`
+                                            text: `Developed by 💞 By Anomus.LY`
                                         })
                                         .setColor(client.color)
                                         .setDescription(
@@ -892,7 +892,7 @@ To enable use antinuke enable ** `)
                                                 client.user.displayAvatarURL()
                                         })
                                         .setFooter({
-                                            text: `Developed by 💞 By .rex4sure.`
+                                            text: `Developed by 💞 By Anomus.LY`
                                         })
                                         .setColor(client.color)
                                         .setDescription(
@@ -932,7 +932,7 @@ To enable use antinuke enable ** `)
                                                 client.user.displayAvatarURL()
                                         })
                                         .setFooter({
-                                            text: `Developed by 💞 By .rex4sure.`
+                                            text: `Developed by 💞 By Anomus.LY`
                                         })
                                         .setColor(client.color)
                                         .setDescription(
@@ -972,7 +972,7 @@ To enable use antinuke enable ** `)
                                                 client.user.displayAvatarURL()
                                         })
                                         .setFooter({
-                                            text: `Developed by 💞 By .rex4sure.`
+                                            text: `Developed by 💞 By Anomus.LY`
                                         })
                                         .setColor(client.color)
                                         .setDescription(
@@ -1012,7 +1012,7 @@ To enable use antinuke enable ** `)
                                                 client.user.displayAvatarURL()
                                         })
                                         .setFooter({
-                                            text: `Developed by 💞 By .rex4sure.`
+                                            text: `Developed by 💞 By Anomus.LY`
                                         })
                                         .setColor(client.color)
                                         .setDescription(
@@ -1066,7 +1066,7 @@ To enable use antinuke enable ** `)
                                             }) || client.user.displayAvatarURL()
                                     })
                                     .setFooter({
-                                        text: `Developed by 💞 By .rex4sure.`
+                                        text: `Developed by 💞 By Anomus.LY`
                                     })
                                     .setColor(client.color)
                                     .setDescription(

@@ -12,7 +12,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have \`Manage Messages\` permissions to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have \`Manage Messages\` permissions to use this command.`
                         )
                 ]
             })
@@ -28,7 +28,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | I must have \`Manage Messages\`, \`Read Message History\` permissions to use this command.`
+                            `<a:Cross:1346485804368789525> | I must have \`Manage Messages\`, \`Read Message History\` permissions to use this command.`
                         )
                 ]
             })
@@ -41,7 +41,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Maximum **99** bot messages can be purged at a time.`
+                            `<a:Cross:1346485804368789525> | Maximum **99** bot messages can be purged at a time.`
                         )
                 ]
             })
@@ -57,7 +57,7 @@ module.exports = {
                 .send({
                     embeds: [
                         embed.setDescription(
-                            `<:tick:1317818894546898985> | Successfully deleted ${response} bot messages.`
+                            `<a:tick:1272061375539318795> | Successfully deleted ${response} bot messages.`
                         )
                     ]
                 })
@@ -70,7 +70,7 @@ module.exports = {
             return message.channel.send({
                 embeds: [
                     embed.setDescription(
-                        `<:cross:1317733546261217300> | I must have \`Manage Messages\`, \`Read Message History\` permissions to use this command.`
+                        `<a:Cross:1346485804368789525> | I must have \`Manage Messages\`, \`Read Message History\` permissions to use this command.`
                     )
                 ]
             })
@@ -78,7 +78,7 @@ module.exports = {
             return message.channel.send({
                 embeds: [
                     embed.setDescription(
-                        `<:cross:1317733546261217300> | You must have \`Manage Messages\` permissions to use this command.`
+                        `<a:Cross:1346485804368789525> | You must have \`Manage Messages\` permissions to use this command.`
                     )
                 ]
             })
@@ -86,7 +86,7 @@ module.exports = {
             return message.channel.send({
                 embeds: [
                     embed.setDescription(
-                        `<:cross:1317733546261217300> | There were no bots messages to purge.`
+                        `<a:Cross:1346485804368789525> | There were no bots messages to purge.`
                     )
                 ]
             })
@@ -94,7 +94,7 @@ module.exports = {
             return message.channel.send({
                 embeds: [
                     embed.setDescription(
-                        `<:cross:1317733546261217300> | I was unable to delete the messages`
+                        `<a:Cross:1346485804368789525> | I was unable to delete the messages`
                     )
                 ]
             })

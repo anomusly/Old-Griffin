@@ -11,7 +11,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have \`Ban Members\` permissions to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have \`Ban Members\` permissions to use this command.`
                         )
                 ]
             })
@@ -22,7 +22,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | I must have \`Ban Members\` permissions to execute this command.`
+                            `<a:Cross:1346485804368789525> | I must have \`Ban Members\` permissions to execute this command.`
                         )
                 ]
             })
@@ -34,7 +34,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have a higher role than me to use this command.`
+                            `<a:Cross:1346485804368789525> | You must have a higher role than me to use this command.`
                         )
                 ]
             })
@@ -46,7 +46,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You didn't provided the id of the member to *Unban*.`
+                            `<a:Cross:1346485804368789525> | You didn't provided the id of the member to *Unban*.`
                         )
                 ]
             })
@@ -58,7 +58,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | This user isn't banned in this server.`
+                                `<a:Cross:1346485804368789525> | This user isn't banned in this server.`
                             )
                     ]
                 })
@@ -69,7 +69,7 @@ module.exports = {
                             new MessageEmbed()
                                 .setColor(client.color)
                                 .setDescription(
-                                    `<:cross:1317733546261217300> | I was unable to *Unban* that member.`
+                                    `<a:Cross:1346485804368789525> | I was unable to *Unban* that member.`
                                 )
                         ]
                     })
@@ -79,7 +79,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:tick:1317818894546898985> | Successfully unbanned the member.`
+                                `<a:tick:1272061375539318795> | Successfully unbanned the member.`
                             )
                     ]
                 })

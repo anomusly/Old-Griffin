@@ -15,7 +15,7 @@ module.exports = {
     run: async (client, message, args) => {
         const embed = new MessageEmbed().setColor(client.color)
 
-     if (message.guild.memberCount < 40) {
+     if (message.guild.memberCount < 1) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
