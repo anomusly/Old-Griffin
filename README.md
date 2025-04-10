@@ -1,4 +1,4 @@
-## 🔗 [Invite the Public Bot (Olympus) by clicking here!](https://discord.com/oauth2/authorize?client_id=1144179659735572640&permissions=2113268958&scope=bot)
+## 🔗 [Invite the Public Bot (Griffin) by clicking here!](https://discord.com/oauth2/authorize?client_id=1358516564680511791&permissions=2113268958&scope=bot)
 
 ## About
 
