@@ -1,4 +1,4 @@
-## 🔗 [Invite the Public Bot (Griffin) by clicking here!](https://discord.com/oauth2/authorize?client_id=1358516564680511791&permissions=2113268958&scope=bot)
+## 🔗 [Invite the Public Bot (Griffin) by clicking here!]([https://discord.com/oauth2/authorize?client_id=1358516564680511791&permissions=2113268958&scope=bot](https://discord.com/oauth2/authorize?client_id=1361011361966068022&permissions=2113268958&scope=bot))
 
 ## About
 
@@ -38,7 +38,7 @@ AnomusLY - *Head Developer* - **[GitHub](https://github.com/anomusly)**
 **Team:**
 <div align="center">
   <a href="https://discord.com/invite/odx">
-    <img src="https://discordapp.com/api/guilds/1249229958711087114/widget.png?style=banner2">
+    <img src="https://discordapp.com/api/guilds/1359926463570251977/widget.png?style=banner2">
   </a>
 </div>
 
